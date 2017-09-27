@@ -6,12 +6,15 @@ const Node = function(val){
         return value;
     }
     function getNext(){
-        return next
+        return next;
+    }
+    function setValue(v){
+        value = v;
     }
     function setNext(n){
-        next=n;
+        next = n;
     }
 
-    return{getValue,getNext,setNext};
+    return{getValue,getNext,setValue,setNext};
 };
 module.exports = Node;
